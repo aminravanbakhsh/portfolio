@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ccf28b8449.js" crossorigin="anonymous"></script>
+
+
+
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <!-- <li><a href="#">Home</a></li> -->
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Hi, my name is</p>
+                    <h1>Amin Ravanbakhsh</h1>
+                </div>
+            </div>
+        </div>
+        <!-------------ABOUT--------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/me.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            Hi it's Nafiseh
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>DevOps tools</span><br>Kubernetes</li>
+                                <li><span>Language</span><br>python, java</li>
+                                <li><span>soft skills</span><br>teamwork</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021</span><br>abrNOC</li>
+                                <li><span>Language</span><br>python, java</li>
+                                <li><span>soft skills</span><br>teamwork</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>DevOps tools</span><br>Kubernetes</li>
+                                <li><span>Language</span><br>python, java</li>
+                                <li><span>soft skills</span><br>teamwork</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!----projects---->
+         <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>project1</h2>
+                        <p>description</p>
+                        <a href="#">learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>project2</h2>
+                        <p>description</p>
+                        <a href="#">learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>project3</h2>
+                        <p>description</p>
+                        <a href="#">learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Conctatc Me</h1>
+                        <p><i class="fa-regular fa-paper-plane"></i>  valizan@mcmaster.ca</p>
+                        <p><i class="fa-solid fa-phone-volume"></i>  9056094039</p>
+                        <div class="related-links">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-left">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        
+
+       
+    </body>
+    
+</html>
