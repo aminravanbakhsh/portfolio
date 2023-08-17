@@ -8,8 +8,9 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #00091a;
+    /* background: #3b5fa1; */
     /* background-image: url(images/jeremy-thomas-E0AHdsENmDg-unsplash.jpeg); */
+    background-image: url(images/iStock-1135531400.jpg);
     color: white;
     /* opacity: 0.5; */
 }
@@ -124,6 +125,19 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+/* Research */
+#research{
+    padding: 30px 0;
+    color: #00001a;
+}
+.research-list{
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+
 /*------Projects*/
 #services{
     padding: 30px 0;
@@ -136,7 +150,7 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 .services-list div{
-    background: #ccddff;
+    background: #54a54b;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -154,7 +168,7 @@ nav ul li a:hover::after{
 }
 .services-list div a{
     text-decoration: none;
-    color: rgb(104, 43, 104);
+    color: rgb(66, 133, 159);
     font-size: 12px;
     margin-top: 20px;
     display: block;

@@ -12,6 +12,8 @@
 
     </head>
     <body>
+
+        <!-------------Abstract--------------->
         <div id="header">
             <div class="container">
                 <nav>
@@ -19,31 +21,49 @@
                         <!-- <li><a href="#">Home</a></li> -->
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Projects</a></li>
+                        <li><a href="#research">Research</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="header-text">
                     <p>Hi, my name is</p>
                     <h1>Amin Ravanbakhsh</h1>
+                    <p>I am a Master of Science student at University of Waterloo.</p>
                 </div>
             </div>
         </div>
+
         <!-------------ABOUT--------------->
         <div id="about">
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="images/me.png">
+                        <!-- <img src="images/me.png"> -->
+                        <img src="./iStock-1135531400.jpg">
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
                         <p>
-                            Hi it's Nafiseh
+                            Hi it's Amin
                         </p>
                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links active-link" onclick="opentab('honors')">Honors</p>
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                             <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>University of Waterloo</span><br>Master of Science in Computer Science</li>
+                                <li><span>Sharif University of Technology</span><br>Bachelor of Science in Computer Engineering</li>
+                                <li><span>Young Scholars Club</span><br>Member of Iran's Physics Olympiad team</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents active-tab" id="honors">
+                            <ul>
+                                <li><span>International Physics Olympiad (IPHO) 2017</span><br>Gold Medalist</li>
+                                <li><span>Iran’s National Physics Olympiad 2016</span><br>Gold Medalist</li>
+                            </ul>
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
@@ -59,14 +79,49 @@
                                 <li><span>soft skills</span><br>teamwork</li>
                             </ul>
                         </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>DevOps tools</span><br>Kubernetes</li>
-                                <li><span>Language</span><br>python, java</li>
-                                <li><span>soft skills</span><br>teamwork</li>
-                            </ul>
-                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Research experience -->
+        <div id="research">
+            <div class="container">
+                <h1 class="sub-title">Research Experience</h1>
+                <div class="research-list">
+                    <div>
+                        <!-- <i class="fa-solid fa-code"></i> -->
+                        <h2>Automated Scientific Discovery</h2>
+                        <p>Developing a Reasoning-based Symbolic Regression tool that leverages background knowledge and axioms to
+                            interpretably discover hidden equations within datasets. This tool aims to identify underlying equations in physics
+                            datasets. As lead researcher, I am conducting the research under guidance of Professor Vijay Ganesh.</p>
+                        <!-- <a href=#>Medium Link</a> -->
+                    </div>
+
+                    <div>
+                        <!-- <i class="fa-solid fa-code"></i> -->
+                        <h2>Deep Bayesian Neural Networks</h2>
+                        <p>Employed Bayesian Inference in conjunction with Thompson sampling to address the Multi-armed Bandit problem
+                            through Reinforcement Learning. My research involved a comprehensive survey of Bayesian algorithms, including
+                            Metropolis-Hasting, Hamiltonian Monte Carlo, Variational Inference, Monte Carlo Dropout, Bootstrap Sampling, etc., to
+                            determine the most suitable algorithm for designing a recommendation system based on industry-specific data. This
+                            research was undertaken under the guidance of Professor Seyed Abbas Hosseini.</p>
+                        <!-- <a href=#>Medium Link</a> -->
+                    </div>
+
+                    <div>
+                        <!-- <i class="fa-solid fa-code"></i> -->
+                        <h2>Concept Drift Adaptive Systems for Federated Learning</h2>
+                        <p>Utilized Attentive Aggregation with Federated Learning to develop a system robust against unexpected data changes,
+                            known as Concept Drift. The results of our research have been applied to the field of the Internet of Vehicles. As a
+                            contributing member of the team, I assisted the lead researcher, Amir Estiri, in conducting empirical tests on the
+                            attentive model.</p>
+                        <!-- <a href=#>Medium Link</a> -->
+                    </div>
+
+                    
                 </div>
             </div>
         </div>
@@ -77,30 +132,58 @@
                 <h1 class="sub-title">My Projects</h1>
                 <div class="services-list">
                     <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>project1</h2>
-                        <p>description</p>
-                        <a href="#">learn more</a>
+                        <!-- <i class="fa-solid fa-code"></i> -->
+                        <h2>Factorization Machines</h2>
+                        <p>Comparison of factorization machines method with common methods for classification and clustering
+                            about categorical data. Implementation of a recommendation system for YektaNet company’s merchandise.</p>
+                        <a href="https://medium.com/analytics-vidhya/classification-in-click-through-rate-prediction-in-display-advertising-a487a03f8631">Medium Link</a>
                     </div>
 
                     <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>project2</h2>
-                        <p>description</p>
-                        <a href="#">learn more</a>
+                        <!-- <i class="fa-solid fa-code"></i> -->
+                        <h2>Brain Tumor Diagnosis</h2>
+                        <p>Employed the VGG16 network for detecting tumors in brain images, and utilized the Grad-CAM algorithm
+                            to visualize the underlying reasons for VGG16's malignant tumor detection.</p>
+                        <a href="#">Code</a>
                     </div>
 
                     <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>project3</h2>
-                        <p>description</p>
-                        <a href="#">learn more</a>
+                        <!-- <i class="fa-solid fa-code"></i> -->
+                        <h2>Heartbeat classification</h2>
+                        <p>Classified ECG time series data using LSTM and CNN networks, and conducted a comparative analysis to
+                            highlight the advantages of LSTM over CNN.</p>
+                        <a href="#">Code</a>
+                    </div>
+
+                    <div>
+                        <!-- <i class="fa-solid fa-code"></i> -->
+                        <h2>Digit Image Generator</h2>
+                        <p>Implemented a Generative Adversarial Network (GANs) to generate artificial digit images that closely 
+                            resemble real handwritten digits.</p>
+                        <a href="#">Code</a>
+                    </div>
+
+                    <div>
+                        <!-- <i class="fa-solid fa-code"></i> -->
+                        <h2>Driver Drowsiness Detection Assistant</h2>
+                        <p>Designed and implemented a driver drowsiness detection system, leveraging a neural network to analyze
+                            facial expressions and issue warnings. Successfully deployed the project on an Arduino board.</p>
+                        <a href="#">Code</a>
+                    </div>
+
+                    <div>
+                        <!-- <i class="fa-solid fa-code"></i> -->
+                        <h2>Movie Recommendation System</h2>
+                        <p>Implemented a recommendation system using movie synopsis. The system includes a search engine that employs the
+                            TF-IDF (Term Frequency - Inverse Document Frequency) algorithm to find movies related to specific search terms.
+                            Furthermore, a Gaussian Mixture model is utilized to categorize movies into distinct clusters.</p>
+                        <a href="#">Code</a>
                     </div>
 
                 </div>
             </div>
         </div>
-
+       
         <!-- Contact -->
         <div id="contact">
             <div class="container">
