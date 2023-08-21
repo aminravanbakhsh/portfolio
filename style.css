@@ -130,9 +130,9 @@ nav ul li a:hover::after{
   .honors-column1 {
     flex-basis: 104%;
     padding: 5px;
-    /* border: 1px solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #f0f0f0; */
+    background-color: #f0f0f0;
   }
   .honors-column1 p{
     margin-bottom: 0px;
