@@ -9,6 +9,7 @@
         <script src="https://kit.fontawesome.com/ccf28b8449.js" crossorigin="anonymous"></script>
 
 
+
     </head>
     <body>
 
@@ -18,195 +19,335 @@
                 <nav>
                     <ul>
                         <!-- <li><a href="#">Home</a></li> -->
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#header">About</a></li>
+                        <li><a href="#education">Education</a></li>
                         <li><a href="#research">Research</a></li>
-                        <li><a href="#services">Projects</a></li>
-                        <li><a href="#teach">Teaching</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#teaching">Teaching</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-                <div class="header-text">
+                <!-- <div class="header-text">
                     <p>Hi, my name is</p>
                     <h1>Amin Ravanbakhsh</h1>
                     <p>I am a Master of Science student at University of Waterloo.</p>
+                </div> -->
+                <div class="header-text">
+                        <div class="header-row">
+                            <div class="first-row-col1">
+                                <img src="./iStock-1135531400.jpg">
+                            </div>
+                            <div class="first-row-clo2">
+                                <h2>About me</h2>
+                                <p>
+                                    Hi it's Amin, Master's student at U Waterloo.
+                                </p>
+                                <p>
+                                <i>CV</i> : <a target="_blank" href="files/cv.pdf">PDF</a>
+                                </p>
+                            </div>
+                        </div>
                 </div>
+                
             </div>
         </div>
 
+        <div class="divider"></div>
 
-        <!-------------ABOUT--------------->
-        <div id="about">
+        <div id="education">
             <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <!-- <img src="images/me.png"> -->
-                        <img src="./iStock-1135531400.jpg">
+                <h1 class="sub-title">Education</h1>
+                <div class="education-list">
+                    <div class="education-row">
+                    <!-- <h3>Master</h3> -->
+                    <div class="education-column1">
+                        <h2>University of Waterloo</h2>
+                        <p>Master of Science in Computer Science</p>
                     </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>
-                            Hi it's Amin
-                        </p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-                            <p class="tab-links active-link" onclick="opentab('honors')">Honors</p>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>University of Waterloo</span><br>Master of Science in Computer Science</li>
-                                <li><span>Sharif University of Technology</span><br>Bachelor of Science in Computer Engineering</li>
-                                <li><span>Young Scholars Club</span><br>Member of Iran's Physics Olympiad team</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents active-tab" id="honors">
-                            <ul>
-                                <li><span>International Physics Olympiad (IPHO) 2017</span><br>Gold Medalist</li>
-                                <li><span>Iran’s National Physics Olympiad 2016</span><br>Gold Medalist</li>
-                            </ul>
-                        </div>
+                    <div class="education-column2">
+                        <p>May 2023 - present</p>
                     </div>
+                    </div>
+                    <div class="education-row">
+                    <!-- <h3>Bachelor's</h3> -->
+                    <div class="education-column1">
+                        <h2>
+                            Sharif University of Technology
+                        </h2>
+                        <p>Bachelor of Science in Computer Engineering, GPA = 17.4/20</p>
+                    </div>
+                    <div class="education-column2">
+                        <p>Sep 2017 - Jul 2022</p>
+                    </div>
+                    </div>
+                    <!-- Add more rows as needed -->
+                    <div class="education-row">
+                        <!-- <h3>Bachelor's</h3> -->
+                        <div class="education-column1">
+                            <h2>
+                                Young Scholars Club
+                            </h2>
+                            <p>Member of Iran’s Physics Olympiad team</p>
+                        </div>
+                        <div class="education-column2">
+                            <p>Jun 2016 - Jul 2017</p>
+                        </div>
+                        </div>
                 </div>
             </div>
-        </div>
-
-        
-
-
+          </div>
+          
 
         <!-- Research experience -->
+        <div class="divider"></div>
         <div id="research">
             <div class="container">
-                <h1 class="sub-title">Research Experience</h1>
-                <div class="services-list">
-                    <div>
-                        <!-- <i class="fa-solid fa-code"></i> -->
-                        <h2>Automated Scientific Discovery</h2>
-                        <p>Developing a Reasoning-based Symbolic Regression tool that leverages background knowledge and axioms to
-                            interpretably discover hidden equations within datasets. This tool aims to identify underlying equations in physics
-                            datasets. As lead researcher, I am conducting the research under guidance of Professor Vijay Ganesh.</p>
-                        <!-- <a href=#>Medium Link</a> -->
-                    </div>
-
-                    <div>
-                        <!-- <i class="fa-solid fa-code"></i> -->
-                        <h2>Deep Bayesian Neural Networks</h2>
-                        <p>Employed Bayesian Inference in conjunction with Thompson sampling to address the Multi-armed Bandit problem
-                            through Reinforcement Learning. My research involved a comprehensive survey of Bayesian algorithms, including
-                            Metropolis-Hasting, Hamiltonian Monte Carlo, Variational Inference, Monte Carlo Dropout, Bootstrap Sampling, etc., to
-                            determine the most suitable algorithm for designing a recommendation system based on industry-specific data. This
-                            research was undertaken under the guidance of Professor Seyed Abbas Hosseini.</p>
-                        <!-- <a href=#>Medium Link</a> -->
-                    </div>
-
-                    <div>
-                        <!-- <i class="fa-solid fa-code"></i> -->
-                        <h2>Concept Drift Adaptive Systems for Federated Learning</h2>
-                        <p>Utilized Attentive Aggregation with Federated Learning to develop a system robust against unexpected data changes,
-                            known as Concept Drift. The results of our research have been applied to the field of the Internet of Vehicles. As a
-                            contributing member of the team, I assisted the lead researcher, Amir Estiri, in conducting empirical tests on the
-                            attentive model.</p>
-                        <!-- <a href=#>Medium Link</a> -->
-                    </div>
-
+              <h1 class="sub-title">Research Experience</h1>
+              <div class="research-list">
+                <div class="research-row">
+                  <!-- <i class="fa-solid fa-code"></i> -->
+                  <div class="research-column1">
                     
+                    <p>
+                        <img src="./iStock-1135531400.jpg">
+                    </p>
+                  </div>
+                  <div class="research-column2">
+                    <h2>Automated Scientific Discovery</h2>
+                    <p>Developing a Reasoning-based Symbolic Regression tool that leverages background knowledge and axioms to
+                        interpretably discover hidden equations within datasets. This tool aims to identify underlying equations in physics
+                        datasets. As lead researcher, I am conducting the research under guidance of Professor Vijay Ganesh.
+                        <a href="#">Medium Link</a>
+                    </p>
+                    
+                  </div>
                 </div>
+          
+                <div class="research-row">
+                  <!-- <i class="fa-solid fa-code"></i> -->
+                  <div class="research-column1">
+                    <p>
+                        <img src="./iStock-1135531400.jpg">
+                    </p>
+                    
+                  </div>
+                  <div class="research-column2">
+                    
+                    <h2>Deep Bayesian Neural Networks</h2>
+                    <p>
+                        Employed Bayesian Inference in conjunction with Thompson sampling to address the Multi-armed Bandit problem
+                        through Reinforcement Learning. My research involved a comprehensive survey of Bayesian algorithms, including
+                        Metropolis-Hasting, Hamiltonian Monte Carlo, Variational Inference, Monte Carlo Dropout, Bootstrap Sampling, etc., to
+                        determine the most suitable algorithm for designing a recommendation system based on industry-specific data. This
+                        research was undertaken under the guidance of Professor Seyed Abbas Hosseini.
+                        <a href="#">Medium Link</a>
+                    </p>
+                    
+                  </div>
+                </div>
+          
+                <div class="research-row">
+                  <!-- <i class="fa-solid fa-code"></i> -->
+                  <div class="research-column1">
+                    <p>
+                        <img src="./iStock-1135531400.jpg">
+                    </p>
+                  </div>
+                  <div class="research-column2">
+                    <h2>Concept Drift Adaptive Systems for Federated Learning</h2>
+                    <p>
+                      Utilized Attentive Aggregation with Federated Learning to develop a system robust against unexpected data changes,
+                      known as Concept Drift. The results of our research have been applied to the field of the Internet of Vehicles. As a
+                      contributing member of the team, I assisted the lead researcher, Amir Estiri, in conducting empirical tests on the
+                      attentive model. <a href="#">Medium Link</a>
+                    </p>
+                    
+                  </div>
+                </div>
+          
+                <!-- Add more research entries as needed -->
+              </div>
             </div>
-        </div>
+          </div>
+          <div class="divider"></div>
 
+         <!-------projects------>
 
-
-         <!----projects---->
-         <div id="services">
+         <div id="projects">
             <div class="container">
-                <h1 class="sub-title">My Projects</h1>
-                <div class="services-list">
-                    <div>
-                        <!-- <i class="fa-solid fa-code"></i> -->
-                        <h2>Factorization Machines</h2>
-                        <p>Comparison of factorization machines method with common methods for classification and clustering
-                            about categorical data. Implementation of a recommendation system for YektaNet company’s merchandise.</p>
+              <h1 class="sub-title">My Projects</h1>
+              <div class="projects-list">
+                <div class="projects-row">
+                  <!-- <div class="projects-column1">
+                    <p>
+                      <img src="./iStock-1135531400.jpg">
+                    </p>
+                  </div>
+                  <div class="projects-column2">
+                    <h2>Factorization Machines</h2>
+                    <p>Comparison of factorization machines method with common methods for classification and clustering
+                      about categorical data. Implementation of a recommendation system for YektaNet company’s merchandise.</p>
+                    <a href="https://medium.com/analytics-vidhya/classification-in-click-through-rate-prediction-in-display-advertising-a487a03f8631">Medium Link</a>
+                  </div> -->
+                  <div class="research-column1">
+                    <p>
+                        <img src="./iStock-1135531400.jpg">
+                    </p>
+                </div>
+                <div class="research-column2">
+                    <h2>Factorization Machines</h2>
+                    <p>Comparison of factorization machines method with common methods for classification and clustering
+                        about categorical data. Implementation of a recommendation system for YektaNet company’s merchandise.
                         <a href="https://medium.com/analytics-vidhya/classification-in-click-through-rate-prediction-in-display-advertising-a487a03f8631">Medium Link</a>
+                    </p>
+                      
+                </div>
+                </div>
+          
+                <div class="projects-row">
+                    <div class="research-column1">
+                        <p>
+                            <img src="./iStock-1135531400.jpg">
+                        </p>
                     </div>
-
-                    <div>
-                        <!-- <i class="fa-solid fa-code"></i> -->
+                    <div class="research-column2">
                         <h2>Brain Tumor Diagnosis</h2>
                         <p>Employed the VGG16 network for detecting tumors in brain images, and utilized the Grad-CAM algorithm
-                            to visualize the underlying reasons for VGG16's malignant tumor detection.</p>
-                        <a href="#">Code</a>
+                            to visualize the underlying reasons for VGG16's malignant tumor detection.
+                            <a href="#">Code</a>
+                        </p>
+                        
                     </div>
-
-                    <div>
-                        <!-- <i class="fa-solid fa-code"></i> -->
-                        <h2>Heartbeat classification</h2>
-                        <p>Classified ECG time series data using LSTM and CNN networks, and conducted a comparative analysis to
-                            highlight the advantages of LSTM over CNN.</p>
-                        <a href="#">Code</a>
-                    </div>
-
-                    <div>
-                        <!-- <i class="fa-solid fa-code"></i> -->
-                        <h2>Digit Image Generator</h2>
-                        <p>Implemented a Generative Adversarial Network (GANs) to generate artificial digit images that closely 
-                            resemble real handwritten digits.</p>
-                        <a href="#">Code</a>
-                    </div>
-
-                    <div>
-                        <!-- <i class="fa-solid fa-code"></i> -->
-                        <h2>Driver Drowsiness Detection Assistant</h2>
-                        <p>Designed and implemented a driver drowsiness detection system, leveraging a neural network to analyze
-                            facial expressions and issue warnings. Successfully deployed the project on an Arduino board.</p>
-                        <a href="#">Code</a>
-                    </div>
-
-                    <div>
-                        <!-- <i class="fa-solid fa-code"></i> -->
-                        <h2>Movie Recommendation System</h2>
-                        <p>Implemented a recommendation system using movie synopsis. The system includes a search engine that employs the
-                            TF-IDF (Term Frequency - Inverse Document Frequency) algorithm to find movies related to specific search terms.
-                            Furthermore, a Gaussian Mixture model is utilized to categorize movies into distinct clusters.</p>
-                        <a href="#">Code</a>
-                    </div>
-
                 </div>
+          
+                <div class="projects-row">
+                    <div class="research-column1">
+                        <p>
+                            <img src="./iStock-1135531400.jpg">
+                        </p>
+                    </div>
+                    <div class="research-column2">
+                  <h2>Heartbeat classification</h2>
+                  <p>Classified ECG time series data using LSTM and CNN networks, and conducted a comparative analysis to
+                    highlight the advantages of LSTM over CNN.
+                    <a href="#">Code</a>
+                </p>
+                  
+                    </div>
+                </div>
+          
+                <div class="projects-row">
+                    <div class="research-column1">
+                        <p>
+                            <img src="./iStock-1135531400.jpg">
+                        </p>
+                    </div>
+                    <div class="research-column2">
+                  <h2>Digit Image Generator</h2>
+                  <p>Implemented a Generative Adversarial Network (GANs) to generate artificial digit images that closely
+                    resemble real handwritten digits.
+                    <a href="#">Code</a>
+                    </p>
+                  
+                    </div>
+                </div>
+          
+                <div class="projects-row">
+                    <div class="research-column1">
+                        <p>
+                            <img src="./iStock-1135531400.jpg">
+                        </p>
+                    </div>
+                    <div class="research-column2">
+                  <h2>Driver Drowsiness Detection Assistant</h2>
+                  <p>Designed and implemented a driver drowsiness detection system, leveraging a neural network to analyze
+                    facial expressions and issue warnings. Successfully deployed the project on an Arduino board.
+                    <a href="#">Code</a>
+                </p>
+                  
+                    </div>
+                </div>
+          
+                <div class="projects-row">
+                    <div class="research-column1">
+                        <p>
+                            <img src="./iStock-1135531400.jpg">
+                        </p>
+                    </div>
+                    <div class="research-column2">
+                  <h2>Movie Recommendation System</h2>
+                  <p>Implemented a recommendation system using movie synopsis. The system includes a search engine that employs the
+                    TF-IDF (Term Frequency - Inverse Document Frequency) algorithm to find movies related to specific search terms.
+                    Furthermore, a Gaussian Mixture model is utilized to categorize movies into distinct clusters.
+                    <a href="#">Code</a>
+                </p>
+                  
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+          
+          <div class="divider"></div>
 
+          <!-- Teaching Experience -->
 
-        <!-- Teaching experience -->
-        <div id="teach">
+          <div id="teaching">
             <div class="container">
-                <h1 class="sub-title">Teaching Experience</h1>
-                <div class="services-list">
-
-                    <div>
-                        <div class="services-line">
-                            <div class="title-font">Machine Learning</div>
-                            <div class="date-font"> 2023</div>
+                <h1 class="sub-title">Teaching</h1>
+                <div class="teaching-list">
+                    <div class="teaching-row">
+                        <div class="teaching-column1">
+                            <p>CE 401717: Machine Learning (Graduate course) - Spring 2022, Fall 2021</p>
                         </div>
-                        <div class="services-line">
-                            <div class="parag-font">Designing and examining course projects</div>
-                            <div class="location-font">University of Waterloo</div>
+                        <!-- <div class="teaching-column2">
+                            <p>Spring 2022, Fall 2021</p>
+                        </div> -->
+                    </div>
+                    <div class="teaching-row">
+                        <div class="teaching-column1">
+                            <p>CE 40951.5: Intelligent Analysis of Biomedical Images (Graduate course) - Spring 2022</p>
                         </div>
-                    </div>    
-                    
+                        <!-- <div class="teaching-column2">
+                            <p>Spring 2022</p>
+                        </div> -->
+                    </div>
+                    <div class="teaching-row">
+                        <div class="teaching-column1">
+                            <p>CE 40417: Artificial Intelligence - Fall 2021 </p>
+                        </div>
+                        <!-- <div class="teaching-column2">
+                            <p>Fall 2021</p>
+                        </div> -->
+                    </div>
+                    <div class="teaching-row">
+                        <div class="teaching-column1">
+                            <p>CE 40181: Probability and Statistics - Fall 2020</p>
+                        </div>
+                        <!-- <div class="teaching-column2">
+                            <p>Fall 2020</p>
+                        </div> -->
+                    </div>
                 </div>
             </div>
-        </div>
-        
-       
+          </div>
+
+          <div class="divider"></div>
+
         <!-- Contact -->
         <div id="contact">
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
-                        <h1 class="sub-title">Conctatc Me</h1>
-                        <p><i class="fa-regular fa-paper-plane"></i>  amin.ravanbakhsh@uwaterloo.ca</p>
-                        <p><i class="fa-solid fa-phone-volume"></i>  +1 437 660 6985</p>
-                        <div class="related-links">
-                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-paper-plane"></i> <a href="amin.ravanbakhsh@uwaterloo.ca">amin.ravanbakhsh@uwaterloo.ca</a></p>
+                        
+                        <p><a href="https://github.com/aminravanbakhsh"><i class="fa fa-github" style="font-size:30px"></i></a><a href="https://github.com/aminravanbakhsh">https://github.com/aminravanbakhsh</a>
+                        </p>
+                        
+                        <p>
+                            <a href="https://www.linkedin.com/in/amin-ravanbakhsh-b03172219/?originalSubdomain=ir"><i class="fa-brands fa-linkedin"></i></a>
+                        </p>
                     </div>
 
                     <div class="contact-left">
