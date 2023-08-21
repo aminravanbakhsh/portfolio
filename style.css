@@ -31,6 +31,12 @@ body{
 }
 
 
+/* #header img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.1;
+} */
 .container{
     padding: 10px 10%   ;
 }
@@ -94,6 +100,68 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
 }
 
+/* -------Honors-------- */
+
+#honors {
+    padding: 30px 0;
+    color: #00001a;
+  }
+  .container h1{
+    margin-bottom: auto;
+  }
+  .honors-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Adjust the gap between rows */
+  }
+  
+  .honors-row {
+    display: flex;
+    flex-direction: row; /* Stack columns vertically */
+    gap: 10px; /* Adjust the gap between columns */
+    justify-content: space-between;
+    margin-bottom: 0px;
+  }
+  
+  h3 {
+    margin: 0; /* Remove margin to avoid extra spacing */
+  }
+  
+  .honors-column1 {
+    flex-basis: 104%;
+    padding: 5px;
+    /* border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0; */
+  }
+  .honors-column1 p{
+    margin-bottom: 0px;
+    /* margin-left: 20px; */
+  }
+  /* .education-column1 h2{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+    font-size:larger;
+  } */
+
+  .honors-column1 p::before{
+    content: "\2022"; /* Unicode bullet character */
+    font-size: 1.5em; /* Adjust the bullet size */
+    line-height: 1; /* Adjust vertical alignment */
+    margin-right: 10px; /* Adjust spacing between bullet and text */
+    vertical-align: middle; /* Align the bullet with the text */
+  }
+  
+  .honors-column2 {
+    flex-basis: 20%;
+    padding: 20px;
+    /* border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0; */
+  }
+
+
 /* ---------Education----------- */
 
 
@@ -156,67 +224,7 @@ nav ul li a:hover::after{
   }
 
   
-  /* -------Honors-------- */
-
-#honors {
-    padding: 30px 0;
-    color: #00001a;
-  }
-  .container h1{
-    margin-bottom: auto;
-  }
-  .honors-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0px; /* Adjust the gap between rows */
-  }
   
-  .honors-row {
-    display: flex;
-    flex-direction: row; /* Stack columns vertically */
-    gap: 10px; /* Adjust the gap between columns */
-    justify-content: space-between;
-    margin-bottom: 0px;
-  }
-  
-  h3 {
-    margin: 0; /* Remove margin to avoid extra spacing */
-  }
-  
-  .honors-column1 {
-    flex-basis: 104%;
-    padding: 5px;
-    /* border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f0f0f0; */
-  }
-  .honors-column1 p{
-    margin-bottom: 0px;
-    /* margin-left: 20px; */
-  }
-  /* .education-column1 h2{
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 10px;
-    font-size:larger;
-  } */
-
-  .honors-column1 p::before{
-    content: "\2022"; /* Unicode bullet character */
-    font-size: 1.5em; /* Adjust the bullet size */
-    line-height: 1; /* Adjust vertical alignment */
-    margin-right: 10px; /* Adjust spacing between bullet and text */
-    vertical-align: middle; /* Align the bullet with the text */
-  }
-  
-  .honors-column2 {
-    flex-basis: 20%;
-    padding: 20px;
-    /* border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f0f0f0; */
-  }
-
 
 /* Research */
 
