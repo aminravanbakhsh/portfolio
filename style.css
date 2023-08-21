@@ -128,9 +128,9 @@ nav ul li a:hover::after{
   }
   
   .honors-column1 {
-    flex-basis: 104%;
+    flex-basis: 115%;
     padding: 5px;
-/*     border: 1px solid #ccc;
+    /* border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f0f0f0; */
   }
@@ -161,6 +161,10 @@ nav ul li a:hover::after{
     background-color: #f0f0f0; */
   }
 
+  .honors-column2 p{
+    margin-left: 32px;
+  }
+
 
 /* ---------Education----------- */
 
@@ -189,7 +193,7 @@ nav ul li a:hover::after{
   }
   
   .education-column1 {
-    flex-basis: 50%;
+    flex-basis: 90%;
     padding: 5px;
     
     /* border: 1px solid #ccc;
@@ -221,6 +225,9 @@ nav ul li a:hover::after{
     /* border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f0f0f0; */
+  }
+  .education-column2 p{
+    margin-left: 25px;
   }
 
   
