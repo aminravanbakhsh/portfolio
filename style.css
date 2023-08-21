@@ -8,12 +8,19 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    /* background: #3b5fa1; */
+    background: rgba(200, 200, 200, 0.5);
     /* background-image: url(images/jeremy-thomas-E0AHdsENmDg-unsplash.jpeg); */
-    background-image: url(images/iStock-1135531400.jpg);
-    color: white;
+    /* background-image: url(images/iStock-1135531400.jpg); */
+    color: rgb(33, 14, 14);
     /* opacity: 0.5; */
 }
+.divider {
+    width: 80%; /* Adjust the width of the divider line */
+    margin: 0 auto; /* Center the divider within its container */
+    border-top: 1px solid black ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 #header{
     width: 100%;
     height: 100vh;
@@ -37,9 +44,12 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); */
+    box-shadow: 0 2px 2px -2px rgb(104, 43, 104) ;
+
 }
 nav ul li a{
-    color: whitesmoke;
+    color: black;
     text-decoration: none;
     font-size: 18px;
 }
@@ -57,144 +67,238 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
-    font-size: 30px;
+    margin-top: 15%;
+    font-size: 20px;
+    
 }
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-}
-#about{
-    padding: 80px 0;
-    color: whitesmoke;
-}
-.row{
+
+.header-row{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    margin: 10px;
 }
-.about-col-1{
-    flex-basis: 35%;
+
+
+.first-row-col1{
+    flex-basis: 30%;
+    margin-right: 80px;
+    
 }
-.about-col-1 img{
+.first-row-col1 img{
     width: 100%;
     border-radius: 15px;
 }
-.about-col-2{
-    flex-basis: 60%;
+.first-row-col2{
+    flex-basis: 70%;
 }
-.sub-title{
-    font-size: 60px;
-    font-weight: 600;
+.first-row-col2 p{
+    margin-top: 20px;
 }
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
-}
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: orange;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-.tab-links.active-link::after{
-    width: 100%;
-}
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
-}
-.tab-contents ul li span{
-    color: blue;
-    font-size: 14px;
-}
-.tab-contents{
-    display: none;
-}
-.tab-contents.active-tab{
-    display: block;
+.header-text h2{
+    font-size: 40px;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
 }
 
+/* ---------Education----------- */
 
 
-
-
-
-
-/*------Projects*/
-#services{
+#education {
     padding: 30px 0;
     color: #00001a;
-}
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.services-head{
+  }
+  
+  .education-list {
     display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap between rows */
+  }
+  
+  .education-row {
+    display: flex;
+    flex-direction: row; /* Stack columns vertically */
+    gap: 10px; /* Adjust the gap between columns */
     justify-content: space-between;
+    margin-bottom: 0px;
+  }
+  
+  h3 {
+    margin: 0; /* Remove margin to avoid extra spacing */
+  }
+  
+  .education-column1 {
+    flex-basis: 50%;
+    padding: 5px;
+    
+    /* border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0; */
+  }
+  .education-column1 p{
+    margin-bottom: 0px;
+    margin-left: 20px;
+  }
+  .education-column1 h2{
+    display: flex;
+    align-items: baseline;
     margin-bottom: 10px;
-}
-.services-list div{
-    background: #54a54b;
-    padding: 40px;
-    border-radius: 10px;    
-}
-.services-list div i{
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-.services-list div a{
-    text-decoration: none;
-    color: rgb(66, 133, 159);
-    font-size: 12px;
+    font-size:larger;
+  }
+
+  .education-column1 h2::before{
+    content: "\2022"; /* Unicode bullet character */
+    font-size: 1.5em; /* Adjust the bullet size */
+    line-height: 1; /* Adjust vertical alignment */
+    margin-right: 10px; /* Adjust spacing between bullet and text */
+    vertical-align: middle; /* Align the bullet with the text */
+  }
+  
+  .education-column2 {
+    flex-basis: 20%;
+    padding: 20px;
+    /* border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0; */
+  }
+
+  
+  
+
+/* Research */
+
+#research {
+    padding: 30px 0;
+    color: #00001a;
+  }
+  .container h1{
+    margin-bottom: 20px;
+  }
+  
+  .research-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap between research entries */
+  }
+  
+  .research-row {
+    display: flex;
+    gap: 20px; /* Adjust the gap between columns */
+  }
+  
+  .research-column1 {
+    flex-basis: 20%;
+    padding: 20px;
+    /* border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0; */
+  }
+
+  .research-column2 {
+    flex-basis: 80%;
+    padding: 20px;
+    /* border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0; */
+  }
+ 
+  .research-column2 a{
     margin-top: 20px;
-    display: block;
-}
-.services-list:hover{
-    /* background: orange; */
-    transform: translateY(-10)
-}
-.services-line{
+    color: rgb(104, 43, 104)
+  }
+  
+  .research-column2 h2 {
+    margin-bottom: 10px; /* Add margin to create spacing between heading and content */
+  }
+ 
+
+
+
+/*------Projects-------*/
+
+#projects {
+    padding: 30px 0;
+    color: #00001a;
+  }
+  
+  .projects-list {
     display: flex;
-    font-size: 40px;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap between projects */
+  }
+  
+  .projects-row {
+    display: flex;
+    gap: 20px; /* Adjust the gap between columns */
+    align-items: flex-start; /* Align columns to the top */
+  }
+  
+  .projects-column1 {
+    flex-basis: 40%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+  }
+  .projects-column2 {
+    flex-basis: 60%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+  }
+  .projects-column2 a{
+    color:rgb(104, 43, 104)
+  }
+  
+  .porjects-column2 h2 {
+    margin-bottom: 10px; /* Add margin to create spacing between heading and content */
+  }
+  
+/* Teaching */
+
+#teaching {
+    padding: 30px 0;
+    color: #00001a;
+  }
+  
+  .teaching-list {
+    display: flex;
+    flex-direction: column;
+    /* gap: 0px; */
+  }
+  
+  .teaching-row {
+    display: flex;
+    gap: 20px; /* Adjust the gap between columns */
+    align-items: flex-start; /* Align columns to the top */
     margin-bottom: 10px;
-}
-.title-font {
-    font-size: 30 px;
-}
-.date-font {
-    font-size: 20 px;
-}
-.parag-font {
-    font-size: 20px;
-}
-.location-font {
-    font-size: 20px;
-}
+  }
 
-
+  .teaching-column1 p::before {
+    content: "\2022"; /* Unicode bullet character */
+    font-size: 1.5em; /* Adjust the bullet size */
+    line-height: 1; /* Adjust vertical alignment */
+    margin-right: 10px; /* Adjust spacing between bullet and text */
+    vertical-align: middle; /* Align the bullet with the text */
+  }
+  
+  .teaching-column1 {
+    flex-basis: 60%;
+    padding: 5px;
+    /* border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0; */
+  }
+  .teaching-column2 {
+    flex-basis: 60%;
+    padding: 20px;
+    /* border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0; */
+  }
 
 /* contact */
+
 .contact-left{
     flex-basis: 40%;
 }
@@ -206,13 +310,16 @@ nav ul li a:hover::after{
     margin-right: 15px;
     font-size: 25px;
 }
-.related-links{
-    margin-top: 30px;
+.contact-left a{
+    color: rgb(104, 43, 104);
 }
-.related-links a{
+/* .related-links{
+    margin-top: 30px;
+} */
+/* .related-links a{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
     color: rgb(104, 43, 104);
     display: inline-block;
-}
+} */
