@@ -250,6 +250,7 @@ nav ul li a:hover::after{
     align-items: baseline;
     margin-bottom: 10px;
     font-size:larger;
+    font-size: 20px;
   }
 
   .education-column1 h2::before{
@@ -417,6 +418,7 @@ nav ul li a:hover::after{
 }
 .contact-left p{
     margin-top: 30px;
+    font-size: 20px;
 }
 .contact-left p i{
     color:rgb(104, 43, 104);
