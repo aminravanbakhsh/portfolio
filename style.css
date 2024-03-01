@@ -243,6 +243,7 @@ nav ul li a:hover::after{
   .education-column1 p{
     margin-bottom: 0px;
     margin-left: 20px;
+    font-size: 20px;
   }
   .education-column1 h2{
     display: flex;
@@ -268,6 +269,7 @@ nav ul li a:hover::after{
   }
   .education-column2 p{
     margin-left: 25px;
+      font-size: 20px;
   }
 
   
@@ -305,6 +307,7 @@ nav ul li a:hover::after{
   .research-column2 {
     flex-basis: 80%;
     padding: 20px;
+    font-size: 20px;
     /* border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f0f0f0; */
@@ -353,6 +356,7 @@ nav ul li a:hover::after{
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f0f0f0;
+    font-size: 20px;
   }
   .projects-column2 a{
     color:rgb(104, 43, 104)
@@ -393,6 +397,7 @@ nav ul li a:hover::after{
   .teaching-column1 {
     flex-basis: 60%;
     padding: 5px;
+    font-size: 20px;
     /* border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f0f0f0; */
