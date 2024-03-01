@@ -176,10 +176,12 @@ nav ul li a:hover::after{
     /* border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f0f0f0; */
+    
   }
   .honors-column1 p{
     margin-bottom: 0px;
     /* margin-left: 20px; */
+      font-size: 20px;
   }
 
   .honors-column1 p::before{
@@ -200,6 +202,7 @@ nav ul li a:hover::after{
 
   .honors-column2 p{
     margin-left: 32px;
+    font-size: 20px;
   }
 
 
