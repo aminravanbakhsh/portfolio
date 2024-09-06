@@ -17,11 +17,7 @@ body {
   line-height: 1.5;
 }
 
-.divider {
-  width: 80%;
-  margin: 20px auto;
-  border-top: 1px solid black;
-}
+/* Remove the .divider class entirely */
 
 #header {
   width: 100%;
@@ -117,9 +113,7 @@ nav ul li a:hover::after {
   box-sizing: border-box;
 }
 
-/* Honors, Education, Work, Research, Projects, Teaching sections */
-/* Update these sections similarly to the following example */
-
+/* Common styles for sections */
 #honors, #education, #work, #research, #projects, #teaching {
   padding: 30px 0;
   color: #00001a;
@@ -135,6 +129,125 @@ nav ul li a:hover::after {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+/* Honors specific styles */
+.honors-column1 p, .honors-column2 p {
+  font-size: 1rem;
+}
+
+.honors-column1 p::before {
+  content: "\2022";
+  font-size: 1.5em;
+  line-height: 1;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Education specific styles */
+.education-column1 h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.education-column1 h2::before {
+  content: "\2022";
+  font-size: 1.5em;
+  line-height: 1;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.education-column1 p, .education-column2 p {
+  font-size: 1rem;
+}
+
+/* Work specific styles */
+.work-column1 {
+  flex-basis: 30%;
+}
+
+.work-column2 {
+  flex-basis: 70%;
+}
+
+.work-column1 p, .work-column2 p {
+  font-size: 1rem;
+}
+
+.work-column1 p::before {
+  content: "\2022";
+  font-size: 1.5em;
+  line-height: 1;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.work-column2 img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Research specific styles */
+.research-column1 {
+  flex-basis: 30%;
+}
+
+.research-column2 {
+  flex-basis: 70%;
+}
+
+.research-column1, .research-column2 {
+  padding: 10px;
+}
+
+.research-column2 h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.research-column2 p {
+  font-size: 1rem;
+}
+
+.research-column2 a {
+  color: rgb(104, 43, 104);
+}
+
+.research-column2 img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Projects specific styles */
+.projects-column1, .projects-column2 {
+  padding: 10px;
+}
+
+.projects-column2 h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.projects-column2 p {
+  font-size: 1rem;
+}
+
+.projects-column2 a {
+  color: rgb(104, 43, 104);
+}
+
+/* Teaching specific styles */
+.teaching-column1 p {
+  font-size: 1rem;
+}
+
+.teaching-column1 p::before {
+  content: "\2022";
+  font-size: 1.5em;
+  line-height: 1;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 /* Contact */
@@ -179,6 +292,14 @@ nav ul li a:hover::after {
       flex-direction: row;
   }
 
+  .honors-column1, .education-column1, .projects-column1 {
+      flex-basis: 70%;
+  }
+
+  .honors-column2, .education-column2, .projects-column2 {
+      flex-basis: 30%;
+  }
+
   .contact-left {
       flex-basis: 40%;
   }
@@ -193,4 +314,29 @@ nav ul li a:hover::after {
   nav ul li {
       margin: 10px 0;
   }
+
+  .work-column1, .work-column2, .research-column1, .research-column2 {
+      flex-basis: 100%;
+  }
+}
+
+/* Additional styles to ensure consistency */
+h1.sub-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure all images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
 }
