@@ -17,8 +17,6 @@ body {
   line-height: 1.5;
 }
 
-/* Remove the .divider class entirely */
-
 #header {
   width: 100%;
   min-height: 100vh;
@@ -28,18 +26,20 @@ body {
 }
 
 .container {
-  padding: 10px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
 }
 
 nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 nav ul li {
   list-style: none;
-  margin: 10px;
+  margin: 10px 20px 10px 0;
   padding: 0;
   box-shadow: 0 2px 2px -2px rgb(104, 43, 104);
 }
@@ -74,24 +74,23 @@ nav ul li a:hover::after {
 .header-row {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .first-row-col1 {
-  flex-basis: 100%;
-  padding: 10px;
+  flex-basis: 30%;
+  padding: 10px 20px 10px 0;
 }
 
 .first-row-col1 img {
   width: 100%;
   max-width: 300px;
   border-radius: 15px;
-  margin: 0 auto;
-  display: block;
 }
 
 .first-row-col2 {
-  flex-basis: 100%;
+  flex-basis: 70%;
+  padding: 10px 0;
 }
 
 .first-row-col2 p {
@@ -127,11 +126,19 @@ nav ul li a:hover::after {
 
 .honors-row, .education-row, .work-row, .research-row, .projects-row, .teaching-row {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: row;
+  gap: 20px;
 }
 
 /* Honors specific styles */
+.honors-column1 {
+  flex-basis: 70%;
+}
+
+.honors-column2 {
+  flex-basis: 30%;
+}
+
 .honors-column1 p, .honors-column2 p {
   font-size: 1rem;
 }
@@ -145,6 +152,14 @@ nav ul li a:hover::after {
 }
 
 /* Education specific styles */
+.education-column1 {
+  flex-basis: 70%;
+}
+
+.education-column2 {
+  flex-basis: 30%;
+}
+
 .education-column1 h2 {
   font-size: 1.2rem;
   margin-bottom: 10px;
@@ -198,7 +213,7 @@ nav ul li a:hover::after {
 }
 
 .research-column1, .research-column2 {
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .research-column2 h2 {
@@ -220,8 +235,16 @@ nav ul li a:hover::after {
 }
 
 /* Projects specific styles */
+.projects-column1 {
+  flex-basis: 30%;
+}
+
+.projects-column2 {
+  flex-basis: 70%;
+}
+
 .projects-column1, .projects-column2 {
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .projects-column2 h2 {
@@ -238,6 +261,10 @@ nav ul li a:hover::after {
 }
 
 /* Teaching specific styles */
+.teaching-column1 {
+  flex-basis: 100%;
+}
+
 .teaching-column1 p {
   font-size: 1rem;
 }
@@ -273,50 +300,27 @@ nav ul li a:hover::after {
 /* Responsive design */
 @media screen and (min-width: 768px) {
   html {
-      font-size: 18px;
-  }
-
-  .header-row {
-      flex-direction: row;
-  }
-
-  .first-row-col1 {
-      flex-basis: 30%;
-  }
-
-  .first-row-col2 {
-      flex-basis: 70%;
-  }
-
-  .honors-row, .education-row, .work-row, .research-row, .projects-row, .teaching-row {
-      flex-direction: row;
-  }
-
-  .honors-column1, .education-column1, .projects-column1 {
-      flex-basis: 70%;
-  }
-
-  .honors-column2, .education-column2, .projects-column2 {
-      flex-basis: 30%;
-  }
-
-  .contact-left {
-      flex-basis: 40%;
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 767px) {
   nav ul {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   nav ul li {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 
-  .work-column1, .work-column2, .research-column1, .research-column2 {
-      flex-basis: 100%;
+  .header-row, .honors-row, .education-row, .work-row, .research-row, .projects-row {
+    flex-direction: column;
+  }
+
+  .first-row-col1, .first-row-col2, .honors-column1, .honors-column2, .education-column1, .education-column2,
+  .work-column1, .work-column2, .research-column1, .research-column2, .projects-column1, .projects-column2 {
+    flex-basis: 100%;
   }
 }
 
